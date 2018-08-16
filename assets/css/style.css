@@ -5,6 +5,10 @@ body, html{
   font-family: 'Catamaran', sans-serif;
 }
 
+*{
+  transition: all ease-in-out 250ms;
+}
+
 
 
 /*================== END OF BASIC SETTINGS ==================*/
@@ -48,9 +52,6 @@ body, html{
 /* --- navbar colors --- */
 }
 .navbar-brand {
-  font-size: 2.25rem;
-  font-weight: 900;
-  color: #4b4b4b;
   padding: 0;
 }
 .navbar a {
@@ -58,8 +59,7 @@ body, html{
 }
 .navbar ul a:hover{
   background: transparent;
-  border-bottom: 2px solid #3d8f87;
-  padding-bottom: 2px;
+  color: #3d8f87;
 }
 
 .navbar--size--xl {
@@ -90,6 +90,15 @@ body, html{
 .navbar--color--ghost .navbar-text,
 .navbar--color--ghost a {
   color: #fff;
+}
+
+
+/*================== DROPDOWN MENU ==================*/
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+  background-color: transparent;
+  border-color: transparent;
+  color: #3d8f87;
 }
 
 
