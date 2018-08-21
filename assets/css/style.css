@@ -266,19 +266,31 @@ footer a:hover{
 
 .grid {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1em;
   grid-row-gap: 1em;
-  grid-auto-rows: 200px;
+  grid-auto-rows:minmax(200px, auto);
+  padding: 50px;
 }
 
 .grid > div{
-  background: #eee;
+  background: #fff;
   padding: 1em;
+  margin: .5px;
 }
 
 .grid > div.nth-child(odd){
   background: #ddd;
 }
+
+.box1 {
+    object-fit: cover;
+    width: 1fr;
+    max-height: auto;
+}
+/* .box {
+  padding: 0;
+  margin: 0;
+} */
 
 /*================== END OF CSS GRID ==================*/
