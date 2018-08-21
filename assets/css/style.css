@@ -101,7 +101,10 @@ body, html{
   color: #3d8f87;
 }
 
-
+#smoothScroll{
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
 
 /*================== END OF NAVBAR ==================*/
 
@@ -258,3 +261,24 @@ footer a:hover{
 .rotateSize{
   font-size: 56px;
 }
+
+/*================== START OF CSS GRID ==================*/
+
+.grid {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  grid-auto-rows: 200px;
+}
+
+.grid > div{
+  background: #eee;
+  padding: 1em;
+}
+
+.grid > div.nth-child(odd){
+  background: #ddd;
+}
+
+/*================== END OF CSS GRID ==================*/
