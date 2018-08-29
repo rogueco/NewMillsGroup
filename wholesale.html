@@ -35,9 +35,9 @@
 	    	<li><a class="aboutUs" href="index.html#aboutUs">About Us</a></li>
 	        <li><a href="index.html#services">Services</a></li>
 	        <li><a href="wholesale.html">Wholesale Offers</a></li>
-	        <li><a href="sellToUs.html">Sell To Us</a></li>
+	        <!--<li><a href="sellToUs.html">Sell To Us</a></li>-->
 	        <li class="dropdown">
-          		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Additional Information <span class="caret"></span></a>
+          		<!--<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Additional Information <span class="caret"></span></a>-->
           			<ul class="dropdown-menu">
             			<li><a href="accountManager.html">Account Manager</a></li>
             			<li><a href="photography.html">Phorography Solution</a></li>
@@ -71,50 +71,80 @@
 		<div class="row">
 			<div class="col-sm-12 pt-100 ">
 				<h2 class="text-center">
-					Featured Wholesale Offers
+					Featured Offers
 				</h2>
 			</div>
 		</div>
 	</div>
 <section class="section sectionWhite">
-<div class="grid">
+	<div class="container mb-30">
+		<div id="btnContainer">
+			<button class="btn active" onclick="filterSelection('all')"> Show all</button>
+			<button class="btn" onclick="filterSelection('apparel')"> Apparel</button>
+			<button class="btn" onclick="filterSelection('footwear')"> Footwear</button>
+			<button class="btn" onclick="filterSelection('child')"> Children's</button>
+			<button class="btn" onclick="filterSelection('underwear')"> Underwear</button>
+			<button class="btn" onclick="filterSelection('other')"> Other</button>
+		</div>
+	</div>
+	<section class="offerSection">
+        <article class="filterDiv footwear">
+			<a href="offers/offer1.html"><img class="offerImage" src="images/offerimages/converse.jpg" alt=" " /></a>
+          <h4 class="offerTitle">
+              Converse Footwear
+          </h4>
+        </article>
+        <article class="filterDiv other underwear">
+          <a href="offers/offer2.html"><img class="offerImage" src="images/offerimages/diesel.jpg" alt=" " /></a>
+          <h4 class="offerTitle">
+            Diesel Underwear
+          </h4>
 
-<div class="box box1">
-	<a href="offer1.html"><img src="images/testimage.jpg" alt=""></a>
-</div>
-<div class="box2">
-		<a href="offer1.html"><img src="images/testimage.jpg" alt=""></a>
-</div>
-<div class="box3">
-		<a href="offer1.html"><img src="images/testimage.jpg" alt=""></a>
-</div>
-<div class="box4">
-		<a href="offer1.html"><img src="images/testimage.jpg" alt=""></a>
-</div>
-<div class="box5">
-		<a href="offer1.html"><img src="images/testimage.jpg" alt=""></a>
-</div>
-<div class="box6">
-		<a href="offer1.html"><img src="images/testimage.jpg" alt=""></a>
-</div>
-<div class="box7">
-		<a href="offer1.html"><img src="images/testimage.jpg" alt=""></a>
-</div>
-<div class="box8">
-		<a href="offer1.html"><img src="images/testimage.jpg" alt=""></a>
-</div>
-<div class="box9">
-		<a href="offer1.html"><img src="images/testimage.jpg" alt=""></a>
-</div>
-
-</div>
-</section>
-
-
-<!-- ================== END OF MAIN CONTENT ================== -->
-
-
-
+        </article>
+        <article class="filterDiv footwear">
+			<a href="offers/offer3.html"><img class="offerImage" src="images/offerimages/underArmour.jpg" alt=" " /></a>
+          <h4 class="offerTitle">
+            Under Armour Footwear
+          </h4>
+        </article>
+        <article class="filterDiv other">
+			<a href="offers/offer4.html"><img class="offerImage" src="images/offerimages/savile.jpg" alt=" " /></a>
+          <h4 class="offerTitle">
+            Savile Row Company - EAU
+          </h4>
+        </article>
+        <article class="filterDiv footwear child">
+			<a href="offers/offer5.html"><img class="offerImage" src="images/offerimages/nickelodeon.jpg" alt=" " /></a>
+          <h4 class="offerTitle">
+            Nickelodeon Children's Footwear
+          </h4>
+        </article>
+        <article class="filterDiv footwear">
+			<a href="offers/offer6.html"><img class="offerImage" src="images/offerimages/trespass.jpg" alt=" " /></a>
+          <h4 class="offerTitle">
+            Trespass Footwear
+          </h4>
+        </article>
+        <article class="filterDiv other apparel">
+			<a href="offers/offer7.html"><img class="offerImage" src="images/offerimages/munkle.jpg" alt=" " /></a>
+            <h4 class="offerTitle">
+                Munkle Shorts
+            </h4>
+        </article>
+        <article class="filterDiv apparel child">
+			<a href="offers/offer8.html"><img class="offerImage" src="images/offerimages/absorba.jpg" alt=" " /></a>
+            <h4 class="offerTitle">
+                Absorba Children's Apparel
+            </h4>
+        </article>
+        <article class="filterDiv other apparel">
+			<a href="offers/offer9.html"><img class="offerImage" src="images/offerimages/rhino.jpg" alt=" " /></a>
+            <h4 class="offerTitle">
+                Rhino Apparel
+            </h4>
+        </article>
+      </section>
+		</section>
 <!-- ================== START OF CONTACT US FOOTER ================== -->
 <div class="contactSection">
 <section class="sectionSmall sectionGraphite">
@@ -151,17 +181,19 @@
 					Information
 				</h4>
 				<div class="information">
+					<a href="index.html">Home</a>
+					<hr class="style-two">
 					<a href="index.html#aboutUs">About Us</a>
 					<hr class="style-two">
 					<a href="#">Services</a>
 					<hr class="style-two">
-					<a href="#">Account Manager</a>
-					<hr class="style-two">
-					<a href="">Photography Solutions</a>
-					<hr class="style-two">
-					<a href="">Sales Channels</a>
-					<hr class="style-two">
-					<a href="">Team</a>
+					<a href="wholesale.html">Wholesale Offers</a>
+					<!--<hr class="style-two">-->
+					<!--<a href="">Photography Solutions</a>-->
+					<!--<hr class="style-two">-->
+					<!--<a href="">Sales Channels</a>-->
+					<!--<hr class="style-two">-->
+					<!--<a href="">Team</a>-->
 				</div>
 			</div>
 		</div>
@@ -202,6 +234,7 @@
 <script src="assets/js/script.js"></script>
 <script src="assets/js/nav.js"></script>
 <script src="assets/js/textRotate.js"></script>
+<script src="assets/js/wholesaleFilter.js"></script>
 <!-- ================== END CUSTOM JS ================== -->
 </body>
 </html>

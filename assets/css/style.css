@@ -269,7 +269,7 @@ footer a:hover{
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1em;
   grid-row-gap: 1em;
-  grid-auto-rows:minmax(200px, auto);
+  grid-auto-rows: minmax(200px, auto);
   padding: 50px;
 }
 
@@ -283,10 +283,11 @@ footer a:hover{
   background: #ddd;
 }
 
-.box1 {
+.box1, box2, box3 {
     object-fit: cover;
     width: 1fr;
     max-height: auto;
+    position: relative;
 }
 /* .box {
   padding: 0;
@@ -294,3 +295,90 @@ footer a:hover{
 } */
 
 /*================== END OF CSS GRID ==================*/
+
+
+/*================== START OF  OFFER ICON ==================*/
+
+.pdfIcon{
+  color: red;
+}
+.excelIcon{
+  color: green;
+}
+
+/*================== END OF OFFER ICON ==================*/
+
+/*================== START OF WHOLESALE GRID ==================*/
+
+/* Grid styles -------------------------------------------------*/
+.offerSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2em;
+}
+
+.offerSection {
+  max-width: 1080px;
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+  margin: auto 10px;
+}
+
+.offerImage {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.offerTitle {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(220, 220, 220, 0.6);
+  border-radius: 15px;
+}
+
+    /*================== START OF WHOLESALE FILTER ==================*/
+
+.filterDiv {
+  background-color: #2196F3;
+  width: 350px;
+  line-height: 300px;
+  text-align: center;
+  margin: 20px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+    /*================== END OF WHOLESALE FILTER ==================*/
+/*================== END OF WHOLESALE GRID ==================*/
+
+
+
