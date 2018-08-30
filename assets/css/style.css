@@ -9,8 +9,6 @@ body, html{
   transition: all ease-in-out 250ms;
 }
 
-
-
 /*================== END OF BASIC SETTINGS ==================*/
 
 /*================== START OF MAIN PAGE ==================*/
@@ -92,6 +90,15 @@ body, html{
   color: #fff;
 }
 
+/*================== START OF NAVBAR COLLAPSE ==================*/
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  border-radius: 1px;
+  background-color: #FFF
+}
+/*================== END OF NAVBAR COLLAPSE ==================*/
 
 /*================== DROPDOWN MENU ==================*/
 
@@ -379,6 +386,5 @@ article {
 }
     /*================== END OF WHOLESALE FILTER ==================*/
 /*================== END OF WHOLESALE GRID ==================*/
-
 
 
