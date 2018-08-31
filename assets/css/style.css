@@ -8,13 +8,13 @@ body, html{
 *{
   transition: all ease-in-out 250ms;
 }
-
 /*================== END OF BASIC SETTINGS ==================*/
 
 /*================== START OF MAIN PAGE ==================*/
 .pimg1{
   background-image:url(../../images/image1.jpg);
   min-height:100%;
+  min-width: 100%;
 }
 .pimg1, .pimg2, .pimg3 {
   position:relative;
@@ -353,8 +353,8 @@ article {
 
 .filterDiv {
   background-color: #2196F3;
-  width: 350px;
-  line-height: 300px;
+  width: 300px;
+  line-height: 257px;
   text-align: center;
   margin: 20px;
   display: none; /* Hidden by default */
@@ -386,5 +386,7 @@ article {
 }
     /*================== END OF WHOLESALE FILTER ==================*/
 /*================== END OF WHOLESALE GRID ==================*/
+
+
 
 
